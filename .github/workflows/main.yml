@@ -3,7 +3,7 @@ name: Seed and Commit Db
 
 on:
   schedule:
-    - cron: "5 * * * *"
+    - cron: "*/2 * * * *"
 permissions:
   contents: write
 jobs:
