@@ -14,7 +14,8 @@ jobs:
       - name: Create report file
         run: date +%s > report.txt
       - name: Commit report
-      - run: git config --global user.name 'Vivek'
-      - run:  git config --global user.email 'vpat95@users.noreply.github.com'
-      - run:  git commit -am "Automated report"
-      - run:  git push
+        run: |
+          git config --global user.name 'Vivek'
+          git config --global user.email 'vpat95@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push
